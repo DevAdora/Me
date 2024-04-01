@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700);
+
+:root {
+  --brown-color: #725843;
+  --light-brown-color: #9f7f65;
+  --dark-gray-color: #60564d;
+  --white-brown-color: #ccb4a0;
+  --dark-brown-color: #3a2a1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--dark-brown-color);
+  background: var(--white-brown-color);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray-color);
+  display: flex;
+  flex-direction: column; /* Adjust the flex direction */
+  justify-content: center; /* Position items at the top and bottom */
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.preloader.fade-out {
+  opacity: 0;
+}
+
+.loader {
+  margin-bottom: 16px;
+  border: 8px solid var(--light-brown-color);
+  border-top: 8px solid var(--dark-brown-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text {
+  font-size: 36px;
+  color: var(--white-brown-color);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: none;
+}
+
+/* HEADER */ 
+
+header {
+  justify-content: space-between;
+  display: flex;
+  padding: 0.6rem 2rem;
+}
+.nav-bar {
+  list-style: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--dark-brown-color);
+  font-weight: 600;
+  padding: 1rem;
+}
+/* HOMEPAGE */
+.maincontent {
+  height: 100vh;
+}
+.main-text {
+  align-items: center;
+  display: flex;
+
+
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.main-text h1 {
+
+  font-size: 100px;
+  font-weight: bold;
+}
+.main-text span {
+  text-align: center;
+  justify-content: left;
+  align-items: left;
+}
+
+
+/* ABOUT */ 
+.about {
+  background-color: var(--dark-brown-color);
+  color: var(--white-brown-color);
+
+  height: 100vh;
+  margin: 2rem;
+  border-radius: 30px;
+}
+.about-title {
+  padding: 1rem;
+  border-bottom: 1px solid var(--white-brown-color);
+}
+.container {
+  height: 100%;
+  padding: 20px;
+}
+.box {
+  border-radius: 25px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+  background-color: #8d2f2f;
+}
+#box1 {
+  z-index: 1;
+}
+#box1 h2 {
+  padding: 20px;
+  color: #e8b27a;
+  font-size: 40px;
+  border-bottom: 1px solid #e8b27a;
+}
+#box2 {
+  border-top: 1px solid #e8b27a;
+  transform: translateY(100%);
+  z-index: 2;
+  top: 10%;
+}
+#box2 h2 {
+  padding: 20px;
+  color: #e8b27a;
+  font-size: 40px;
+  border-bottom: 1px solid #e8b27a;
+}
+#box3 {
+  border-top: 1px solid #e8b27a;
+  transform: translateY(200%);
+  z-index: 3;
+  top: 20%;
+}
+#box3 h2 {
+  padding: 20px;
+  color: #e8b27a;
+  font-size: 40px;
+  border-bottom: 1px solid #e8b27a;
+}
+
+/* CSS PREDEFINED CLASS START */
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.padding-container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1024px) {
+  .padding-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .padding-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.circle-gradient {
+  background-image: linear-gradient(to bottom, #b43939, #faf6f9);
+  background-position: center;
+
+  opacity: 10%;
+  border-radius: 100%;
+
+  z-index: -1;
+
+  position: absolute;
+  top: 0;
+}
+
+.circle-lg {
+  width: 33rem;
+  height: 33rem;
+}
+
+.circle-xl {
+  width: 40rem;
+  height: 40rem;
+}
+
+.circle-2xl {
+  width: 45rem;
+  height: 45rem;
+}
+
+/* CSS PREDEFINED CLASS END */
+
+footer {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 3rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-head-text {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding-top: 4rem;
+}
+
+.footer-head-text p {
+  color: #545454;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-head-text a {
+  width: 100%;
+
+  color: #0e0506;
+  text-shadow: 8px 6px 0 rgba(0, 0, 0, 0.3);
+
+  font-size: 11.5rem;
+  font-weight: 700;
+  line-height: 1;
+
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  position: relative;
+}
+
+.footer-head-text a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 7px;
+  background-color: #0e0506;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer-head-text a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.footer-links {
+  width: 100%;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+.footer-links .f-links {
+  font-size: 1rem;
+
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  flex: 1 1 0%;
+
+  gap: 8px;
+}
+
+.f-links h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.f-links a {
+  text-decoration: underline;
+  color: #2e2e2e;
+  white-space: pre-line;
+}
+
+.f-links hr {
+  width: 100%;
+}
+
+.footer-bottom-links {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex: 1;
+
+  gap: 10px;
+  padding-bottom: 2rem;
+}
+
+.f-bottom-hr {
+  width: 100%;
+}
+
+.f-bottom-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.9rem;
+}
+
+.f-bottom-links div {
+  display: flex;
+  gap: 2rem;
+}
+
+.f-bottom-links div a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.f-bottom-links div p {
+  color: #2e2e2e;
+}
