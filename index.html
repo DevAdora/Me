@@ -8,30 +8,37 @@
     <link rel="stylesheet" href="styles/main.css" />
     <!-- js -->
     <script src="script/script.js"></script>
+    <script src="script/nav.js"></script>
   </head>
-  <header class="max-container padding-container">
-    <div></div>
-  </header>
   <body>
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="loader"></div>
       <div class="text"></div>
-    </div>
+    </div> -->
     <header>
-      <div class="logo">
-          <h1>Code By Ar-ar</h1>
-      </div>
-      <div class="nav-bar">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </div>
+      <nav>
+        <div class="navbar-container">
+          <div class="logo">
+            <h1>Code By Ar-ar</h1>
+          </div>
+          <ul class="nav-links" data-visible="false">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="burger"></button>
+        </div>
+      </nav>
     </header>
-    <main class="max-container padding-container">
-      <div class="main-text">
-        <h1>HI THERE, I'M RAI M. REYES JR.</h1>
-        <span>An aspiring freelance software developer & web designer from Philippines</span>
+    <main class="maincontent">
+      <div class="main-text-container">
+        <div class="main-text">
+          <h1>HI THERE, I'M RAI M. REYES JR.</h1>
+          <span
+            >An aspiring freelance software developer & web designer from
+            Philippines</span
+          >
+        </div>
       </div>
     </main>
     <div class="about">
