@@ -70,6 +70,7 @@ window.addEventListener('scroll', function() {
       // Add the circle back into the DOM
       document.body.appendChild(circle); // Adjust the parent element if necessary
       circle.style.display = 'block';
+      // circle.style.display = 'block';
       // or
       // circle.style.display = 'block'; // Show the circle if it was hidden
     }
