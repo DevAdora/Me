@@ -6,9 +6,11 @@
     <title>Code by Ar-ar</title>
     <!-- css -->
     <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- js -->
     <script src="script/script.js"></script>
-    <script src="script/nav.js"></script>
+    <script src="script/nav.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- <div class="preloader">
@@ -21,40 +23,108 @@
           <div class="logo">
             <h1>Code By Ar-ar</h1>
           </div>
-          <ul class="nav-links" data-visible="false">
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
           <button class="burger"></button>
+          <div class="burgermenu">
+            <ul class="nav-links" >
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main class="maincontent">
+      <div class="circle-gradient-main main-circle-2xl"></div>
       <div class="main-text-container">
-        <div class="main-text">
+        <div class="main-text" data-aos="fade-up">
           <h1>HI THERE, I'M RAI M. REYES JR.</h1>
-          <span
-            >An aspiring freelance software developer & web designer from
-            Philippines</span
-          >
+          <span>An aspiring freelance software developer & web designer from Philippines</span>
         </div>
       </div>
     </main>
-    <div class="about">
-      <div class="about-title">
-        <h1>--1 ABOUT</h1>
+    <div class="about" data-aos="zoom-in-up" data-aos-offset="120" data-aos-easing="ease" data-aos-duration="400">
+      <div class="about-container" data-aos="fade-up">
+        <div class="about-title" data-aos="fade-up">
+          <h1>ABOUT ME</h1>
+        </div>
+        <div class="about-content" data-aos="fade-up">
+          <div class="about-image" data-aos="fade-left">
+            <img src="images/about-img.svg" />
+          </div>
+          <div class="about-text" data-aos="fade-right">
+            <h1>Hi!</h1>
+            <span
+              >I'm Rai M. Reyes Jr., working as freelancer of webdesigning and
+              software development, currently residing in the Philippines. I do
+              webdesigning, fullstack development and graphic designing</span
+            >
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="box" id="box1">
-        <h2>01</h2>
+    
+    <div class="services">
+      <div class="services-container">
+      <div class="services-title">
+        <h1>SERVICES I OFFER.</h1>
+        </div>
+        <div class="services-quotes">
+          <span>"I am here to help you transform your tech aspirations into a remarkable reality."
+          </span>
+        </div>
       </div>
-      <div class="box" id="box2">
-        <h2>02</h2>
+        <div class="box" id="box1">
+          <h2 class="italic-text">Web Designing</h2>
+          <div class="services-content">
+            <div class="services-number">
+              <h1>01 ✧</h1>
+            </div>
+            <div class="services-text">
+              <span>I have been enjoying creating and designing Web, I also actively participate in contests such as Web Designing and Development</span>
+            </div>
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <h2 class="italic-text">Fullstack Development</h2>
+          <div class="services-content">
+            <div class="services-number">
+              <h1>02 ✧</h1>
+            </div>
+            <div class="services-text">
+              <span>As a student, I am humbly experienced on building and developing full stack applications and integrating.</span>
+            </div>
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <h2 class="italic-text">Graphic Designing</h2>
+          <div class="services-content">
+            <div class="services-number">
+              <h1>03 ✧</h1>
+            </div>
+            <div class="services-text">
+              <span>I also enjoyed designing such as mockups, logo and creating art.</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="box" id="box3">
-        <h2>03</h2>
+    </div>
+
+    <div class="projects">
+      <div class="projects-title">
+        <h1>RECENT PROJECTS</h1>
+      </div>
+      <div class="project-content">
+        <div class="project-image">
+          <img src="images/hr-image.png" alt="">
+        </div>
+        <div class="project-desc">
+          <div class="project-desc-title">
+            <h2>Human Resource Management for Southland College</h2>
+          </div>
+          <span>2023-2024</span>
+          <span>Development</span>
+        </div>
       </div>
     </div>
 
@@ -62,8 +132,8 @@
       <div class="circle-gradient circle-2xl"></div>
 
       <div class="footer-head-text">
-        <p>Want some free enrollment?</p>
-        <a href="#">Contact Us</a>
+        <p>Want to work with me></p>
+        <a href="#">GET IN TOUCH</a>
       </div>
 
       <div class="footer-links">
@@ -77,16 +147,14 @@
         <div class="f-links">
           <h3>Contacts</h3>
           <hr />
-          <a href="#">www.fbc.edu.ph</a>
-          <a href="#">info@fbc.edu.ph</a>
-          <a href="#">infofbcphilippines@gmail.com</a>
-          <a href="#">+63 34 4713399</a>
+          <a href="#">raireyesjr@gmail.com</a>
+          <a href="#">+63 9506 589 083</a>
         </div>
         <div class="f-links">
           <h3>Address</h3>
           <hr />
           <a href="#"
-            >Rizal St., Kabankalan City 6111 Negros Occidental, Philippines</a
+            >Kabankalan City 6111 Negros Occidental, Philippines</a
           >
         </div>
       </div>
@@ -99,9 +167,16 @@
             <a href="#">Legal Terms</a>
             <a href="#">Privacy Policy</a>
           </div>
-          <p>© Felloship Baptist College</p>
+          <p>© Code by Ar-ar</p>
         </div>
       </div>
     </footer>
   </body>
 </html>
+
+
+<script>
+  AOS.init();
+</script>
+
+

@@ -1,29 +1,14 @@
-
 const navLinks = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger");
+const burgerMenu = document.querySelector(".burgermenu");
 
 burger.addEventListener("click", () => {
-  const isVisible = navLinks.classList.contains("visible");
+  let isVisible = burgerMenu.classList.contains('active');
 
   if (!isVisible) {
-    navLinks.classList.add("visible");
+    burgerMenu.classList.add("active");
   } else {
-    navLinks.classList.remove("visible");
+    burgerMenu.classList.remove("active");
   }
 });
 
-const nav = document.querySelector("nav");
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.intersectionRatio === 0) {
-      burger.style.display = "block";
-    } else {
-      burger.style.display = "none";
-      navLinks.classList.remove("visible");
-    }
-  });
-}, { threshold: 1 });
-
-// Observe the nav element
-observer.observe(nav);
