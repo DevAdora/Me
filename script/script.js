@@ -75,10 +75,4 @@ window.addEventListener('scroll', function() {
       // circle.style.display = 'block'; // Show the circle if it was hidden
     }
   }
-  else if (scrollPosition > stopScrollPosition) {
-    // Remove or hide the circle
-    circle.style.display = 'none';
-    // or
-    // circle.style.display = 'none'; // Use .style.display to hide the element
-  }
 });

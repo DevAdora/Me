@@ -6,10 +6,12 @@
     <title>Code by Ar-ar</title>
     <!-- css -->
     <link rel="stylesheet" href="styles/main.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- js -->
     <script src="script/script.js"></script>
     <script src="script/nav.js" defer></script>
+    <script src="script/hover.js" defer></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -23,13 +25,19 @@
           <div class="logo">
             <h1>Code By Ar-ar</h1>
           </div>
-          <button class="burger"></button>
+          <button class="burger" id="burger"></button>
           <div class="burgermenu">
-            <ul class="nav-links" >
+            <ul class="nav-links">
+              <li><a href="#about">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#works">Work</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="social-links">
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Email</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -39,84 +47,113 @@
       <div class="main-text-container">
         <div class="main-text" data-aos="fade-up">
           <h1>HI THERE, I'M RAI M. REYES JR.</h1>
-          <span>An aspiring freelance software developer & web designer from Philippines</span>
+          <span
+            >An aspiring freelance software developer & web designer from
+            Philippines</span
+          >
         </div>
       </div>
     </main>
-    <div class="about" data-aos="zoom-in-up" data-aos-offset="120" data-aos-easing="ease" data-aos-duration="400">
+    <div
+      class="about"
+      data-aos="zoom-in-up"
+      data-aos-offset="60"
+      data-aos-easing="ease"
+      data-aos-duration="1000"
+    >
       <div class="about-container" data-aos="fade-up">
         <div class="about-title" data-aos="fade-up">
           <h1>ABOUT ME</h1>
         </div>
         <div class="about-content" data-aos="fade-up">
           <div class="about-image" data-aos="fade-left">
+            <div class="circle-gradient-about about-circle-lg"></div>
+            <div class="circle-gradient-about about-circle-xl"></div>
+            <div class="circle-gradient-about about-circle-2xl"></div>
             <img src="images/about-img.svg" />
           </div>
           <div class="about-text" data-aos="fade-right">
             <h1>Hi!</h1>
             <span
-              >I'm Rai M. Reyes Jr., working as freelancer of webdesigning and
-              software development, currently residing in the Philippines. I do
-              webdesigning, fullstack development and graphic designing</span
+              >I'm Rai M. Reyes Jr., working as freelancer of Web Designing and
+              Software Development, currently residing in the Philippines. I do
+              Web Designing, Fullstack Development and Graphic Designing</span
             >
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="services">
       <div class="services-container">
-      <div class="services-title">
-        <h1>SERVICES I OFFER.</h1>
+        <div class="services-title">
+          <h1>SERVICES I OFFER.</h1>
         </div>
         <div class="services-quotes">
-          <span>"I am here to help you transform your tech aspirations into a remarkable reality."
+          <span
+            >"I am here to help you transform your tech aspirations into a
+            remarkable reality."
           </span>
         </div>
       </div>
-        <div class="box" id="box1">
-          <h2 class="italic-text">Web Designing</h2>
-          <div class="services-content">
-            <div class="services-number">
-              <h1>01 ✧</h1>
-            </div>
-            <div class="services-text">
-              <span>I have been enjoying creating and designing Web, I also actively participate in contests such as Web Designing and Development</span>
-            </div>
+      <div class="box" id="box1">
+        <h2 class="italic-text">Web Designing</h2>
+        <div class="services-content">
+          <div class="services-number">
+            <h1>01 ✧</h1>
+          </div>
+          <div class="services-text">
+            <span
+              >I have been enjoying creating and designing Web, I also actively
+              participate in contests such as Web Designing and
+              Development</span
+            >
           </div>
         </div>
-        <div class="box" id="box2">
-          <h2 class="italic-text">Fullstack Development</h2>
-          <div class="services-content">
-            <div class="services-number">
-              <h1>02 ✧</h1>
-            </div>
-            <div class="services-text">
-              <span>As a student, I am humbly experienced on building and developing full stack applications and integrating.</span>
-            </div>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="italic-text">Fullstack Development</h2>
+        <div class="services-content">
+          <div class="services-number">
+            <h1>02 ✧</h1>
+          </div>
+          <div class="services-text">
+            <span
+              >As a student, I am humbly experienced on building and developing
+              full stack applications and integrating.</span
+            >
           </div>
         </div>
-        <div class="box" id="box3">
-          <h2 class="italic-text">Graphic Designing</h2>
-          <div class="services-content">
-            <div class="services-number">
-              <h1>03 ✧</h1>
-            </div>
-            <div class="services-text">
-              <span>I also enjoyed designing such as mockups, logo and creating art.</span>
-            </div>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="italic-text">Graphic Designing</h2>
+        <div class="services-content">
+          <div class="services-number">
+            <h1>03 ✧</h1>
+          </div>
+          <div class="services-text">
+            <span
+              >I also enjoyed designing such as mockups, logo and creating
+              art.</span
+            >
           </div>
         </div>
       </div>
     </div>
 
     <div class="projects">
-      <div class="projects-title">
+      <div
+        class="projects-title"
+        data-aos="fade-up"
+        data-aos-offset="60"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
+      >
         <h1>RECENT PROJECTS</h1>
       </div>
-      <div class="project-content">
+      <div class="project-content" id="project1">
         <div class="project-image">
-          <img src="images/hr-image.png" alt="">
+          <img src="images/hr-image.png" alt="" />
         </div>
         <div class="project-desc">
           <div class="project-desc-title">
@@ -124,17 +161,41 @@
           </div>
           <span>2023-2024</span>
           <span>Development</span>
+          <span>Fullstack</span>
         </div>
+        <div class="view-more">View More</div>
       </div>
-      <div class="projects-grid">
-        <div class="projects-grid-image">
+      <div class="project-content">
+        <div class="project-image">
+          <img src="images/wvsu-web.png" alt="" />
+        </div>
+        <div class="project-desc">
+          <div class="project-desc-title">
+            <h2>Static Web Designing For Southland College</h2>
+          </div>
+          <span>2023-2024</span>
+          <span>Development</span>
+          <span>Designing</span>
+        </div>
+        <div class="view-more">View More</div>
+      </div>
+    </div>
 
-        </div>
+    <div class="projects-gallery">
+      <div class="projects-gallery-title">
+        <h1>WORK GALLERY</h1>
       </div>
-      <div class="projects-gallery">
-        <div class="project-gallery-images">
-          
-        </div>
+      <div class="projects-gallery-images">
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
+      </div>
+      <div class="projects-gallery-images">
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
+        <img src="images/wvsu-web.png" />
       </div>
     </div>
 
@@ -142,7 +203,7 @@
       <div class="circle-gradient circle-2xl"></div>
 
       <div class="footer-head-text">
-        <p>Want to work with me></p>
+        <p>Want to work with me?</p>
         <a href="#">GET IN TOUCH</a>
       </div>
 
@@ -163,9 +224,7 @@
         <div class="f-links">
           <h3>Address</h3>
           <hr />
-          <a href="#"
-            >Kabankalan City 6111 Negros Occidental, Philippines</a
-          >
+          <a href="#">Kabankalan City 6111 Negros Occidental, Philippines</a>
         </div>
       </div>
 
@@ -184,9 +243,6 @@
   </body>
 </html>
 
-
 <script>
   AOS.init();
 </script>
-
-

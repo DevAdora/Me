@@ -12,3 +12,6 @@ burger.addEventListener("click", () => {
   }
 });
 
+burger.addEventListener('click', function() {
+  this.classList.toggle('open');
+});
