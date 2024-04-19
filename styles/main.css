@@ -28,16 +28,17 @@ body {
   font-family: "Karla", sans-serif;
   width: 100%;
 }
+/* Styles for the preloader container */
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--dark-gray-color);
+  background-color: var(--wrought-iron-color);
   display: flex;
-  flex-direction: column; /* Adjust the flex direction */
-  justify-content: center; /* Position items at the top and bottom */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 9999;
   opacity: 1;
@@ -47,12 +48,55 @@ body {
 
 .preloader.fade-out {
   opacity: 0;
+  transition: 1s ease-out;
 }
 
-.loader {
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 1s ease-out;
+}
+
+.distorted-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+  animation: distort 2s forwards;
+}
+
+@keyframes distort {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+}
+
+/* .loader {
   margin-bottom: 16px;
-  border: 8px solid var(--light-brown-color);
-  border-top: 8px solid var(--dark-brown-color);
+  border: 8px solid var(--kendal-charcoal-color);
+  border-top: 8px solid var(--white-dove-color);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -66,7 +110,7 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .text {
   font-size: 36px;

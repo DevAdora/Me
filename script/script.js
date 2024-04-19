@@ -19,23 +19,20 @@
 window.addEventListener("load", function () {
   setTimeout(function () {
     var text = document.querySelector(".text");
-    text.textContent = "RAI";
-    setTimeout(function () {
-      text.textContent = "RAI REYES";
-      setTimeout(function () {
-        text.textContent = "RAI REYES JR.";
-      }, 1000);
-    }, 1000);
-  }, 1000);
+    text.textContent = "© Portfolio by Rai";
+
+  }, 1);
 
   setTimeout(function () {
     var preloader = document.querySelector(".preloader");
     preloader.classList.add("fade-out");
-  }, 4000);
+  }, 2000);
 
   var content = document.querySelector(".content");
   content.style.display = "block";
 });
+
+
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
