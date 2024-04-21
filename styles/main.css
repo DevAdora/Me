@@ -72,13 +72,21 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5));
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
   animation: distort 2s forwards;
 }
 
 @keyframes distort {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100%); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 .text {
@@ -628,6 +636,7 @@ nav {
   transition: transform 0.5s ease;
 
   padding: 1.5rem 0;
+
   gap: 20px;
   width: 35%;
   left: -20%;
@@ -638,8 +647,36 @@ nav {
 .projects-gallery-images img {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s;
   object-fit: cover;
 }
+
+.slideLeft {
+  animation: slideLeft 0.5s ease forwards;
+}
+
+.slideRight {
+  animation: slideRight 0.5s ease forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px); /* Adjust the distance to slide */
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px); /* Adjust the distance to slide */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 /* .projects-gallery {
   width: 120vw;
   left: -10vw;
@@ -864,8 +901,8 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70px;
-  width: 70px;
+  height: 75px;
+  width: 75px;
   font-size: 20px;
   padding: 10px;
   background-color: var(--kendal-charcoal-color);
@@ -954,7 +991,7 @@ footer {
   .services {
     height: 100%;
   }
-  
+
   .services-content {
     font-size: 16px;
     display: flex;
@@ -978,7 +1015,7 @@ footer {
   body {
     width: 100vw;
   }
-  .main-text h1{
+  .main-text h1 {
     font-size: 56px;
   }
   .main-circle-2xl {
@@ -986,9 +1023,8 @@ footer {
     height: 25rem;
   }
   .circle-gradient-main {
- 
     background-position: center;
-  
+
     position: absolute;
     background-attachment: fixed;
     top: 25%;
@@ -1014,7 +1050,7 @@ footer {
   .about-text {
     text-align: center;
   }
- 
+
   .services {
     height: 100%;
     background: var(--wrought-iron-color);
@@ -1022,9 +1058,9 @@ footer {
   .services-container {
     display: flex;
     flex-direction: column;
-  
+
     justify-content: center;
-  
+
     align-items: center;
     padding: 2rem;
   }
@@ -1036,7 +1072,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
-  
   }
   .box .services-number {
     border-right: 1px solid var(--white-dove-color);
@@ -1064,9 +1099,8 @@ footer {
   .footer-bottom-links {
     flex-wrap: wrap;
   }
-  .f-bottom-links a{
+  .f-bottom-links a {
     font-size: 16px;
-  
   }
   .project-desc {
     flex-wrap: wrap;
@@ -1095,17 +1129,15 @@ footer {
     font-size: 56px;
   }
   .circle-gradient-main {
- 
     background-position: center;
-  
+
     position: absolute;
     background-attachment: fixed;
     top: 25%;
   }
   .circle-gradient-about {
- 
     background-position: center;
-  
+
     position: absolute;
     background-attachment: fixed;
     top: 25%;
@@ -1155,8 +1187,7 @@ footer {
   .footer-bottom-links {
     flex-wrap: wrap;
   }
-  .f-bottom-links a{
+  .f-bottom-links a {
     font-size: 16px;
-  
   }
 }
