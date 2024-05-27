@@ -89,10 +89,10 @@ body {
   }
 }
 
-.text {
+/* .text {
   color: white;
   font-size: 24px;
-}
+} */
 
 [data-aos="fade-up"] {
   opacity: 0;
