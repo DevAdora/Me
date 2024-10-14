@@ -1,51 +1,64 @@
-🚀 [Your Name]'s Personal Portfolio
-Welcome to my personal portfolio! This repository showcases my projects, skills, and achievements. Here, you'll find a collection of work that demonstrates my experience as a [Your Role] with a focus on [Your Focus/Tech Stack].
+# 🚀 Devadora's Personal Portfolio
 
-📋 Table of Contents
-About Me
-Skills
-Projects
-Installation
-Contact
-🎯 About Me
-Hello! I'm [Your Name], a passionate [Your Role] with a strong background in [Your Field/Tech Stack]. I enjoy working on projects that involve [mention areas of interest or technologies] and have experience with [languages, tools, or frameworks]. When I'm not coding, I enjoy [mention a few hobbies or interests].
+Welcome to my personal portfolio! This repository showcases my projects, skills, and achievements. Here, you'll find a collection of work that demonstrates my experience as a student aspiring to be a software developer with a focus on JavaScript.
 
-🌍 Location: Philippines
-🎓 Education: Bachelor of Science in Information Technology, 2025
-💼 Current Role: Student and Freelancing
-🌱 Currently learning: Dart and Flutter
-🛠️ Skills
+## 📋 Table of Contents
+- [About Me](#about-me)
+- [Skills](#skills)
+- [Projects](#projects)
+- [Contact](#contact)
+
+## 🎯 About Me
+
+Hello! I'm Devadora, a passionate student and freelancer aiming to become a software developer, with a focus on JavaScript. I enjoy working on projects that involve web development and mobile apps, and I'm currently diving into **Dart** and **Flutter** to expand my skill set. When I'm not coding, you can find me either lost in video games 🎮 or binge-watching Netflix series! 
+
+- 🌍 **Location:** Philippines
+- 🎓 **Education:** Bachelor of Science in Information Technology, 2025
+- 💼 **Current Role:** Student and Freelancer
+- 🌱 **Currently learning:** Dart and Flutter
+
+## 🛠️ Skills
+
 Here are some technologies and tools I'm proficient in:
 
-Languages: [e.g., JavaScript, Python, etc.]
-Frameworks & Libraries: [e.g., React, Tailwind, etc.]
-Databases: [e.g., MySQL, MongoDB, etc.]
-Version Control: Git, GitHub
-💻 Projects
+- **Languages:** JavaScript, Python, HTML/CSS
+- **Frameworks & Libraries:** React, Tailwind CSS
+- **Databases:** MySQL, MongoDB
+- **Version Control:** Git, GitHub
+
+## 💻 Projects
+
 Here are some highlights from my portfolio:
 
-[ARC-TECH]
-Description: ARC-TECH is website designed for architectures. This website showcases and highlights some of the beautiful architecures and their information.
-Features: Showcase some architectures and their features.
-Live Demo: TBA
-Repo: https://github.com/DevAdora/ARC-TECH.git
-[HRMS]
-Description: An online platform intended for the employees of the campus.
-Features: Features include apply for leaves, status, updating information, dashboard and etc.
-Live Demo: TBA
-Repo: https://github.com/Oniely/HRMS.git
+### [ARC-TECH]
+- **Description:** ARC-TECH is a website designed for architects. It showcases and highlights some of the most stunning architectures and their detailed information.
+- **Features:** Explore and discover beautiful architectural designs and their features.
+- **Live Demo:** TBA
+- **Repo:** [ARC-TECH Repo](https://github.com/DevAdora/ARC-TECH.git)
 
-📫 Contact
+### [HRMS]
+- **Description:** An online platform for campus employees to handle administrative tasks.
+- **Features:** Employees can apply for leaves, check their status, update personal information, and access a dashboard with key details.
+- **Live Demo:** TBA
+- **Repo:** [HRMS Repo](https://github.com/Oniely/HRMS.git)
+
+## 📫 Contact
+
 Feel free to reach out to me via:
 
-Email: raireyesjr@gmail.com
-GitHub: https://github.com/DevAdora
-Portfolio:(https://devadora.github.io/Me/)
+- **Email:** raireyesjr@gmail.com
+- **GitHub:** [DevAdora GitHub](https://github.com/DevAdora)
+- **Portfolio:** [DevAdora's Portfolio](https://devadora.github.io/Me/)
 
-License
+---
+
+### License
+
 This project is licensed under the [Your License] - see the LICENSE file for details.
 
-Acknowledgments
-Thanks to all the resources and people who have inspired my projects, including [mention any specific blogs, tutorials, or individuals].
+---
 
-Feel free to modify and expand the sections depending on your specific content! Let me know if you need any more adjustments.
+### Acknowledgments
+
+Big thanks to all the amazing resources, blogs, tutorials, and people that have inspired me along the way!
+
