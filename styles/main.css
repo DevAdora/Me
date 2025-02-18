@@ -550,7 +550,7 @@ nav {
   border-top: 1px solid var(--white-dove-color);
   transform: translateY(100%);
   z-index: 2;
-  top: 15%;
+  top: 10%;
 }
 #box2 h2 {
   padding: 20px;
