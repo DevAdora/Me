@@ -10,6 +10,8 @@
   --kendal-charcoal-color: #686662;
   --white-dove-color: #f0ede4;
   --wrought-iron-color: #323333;
+
+  --dark-black-color: #1a1a17;
 }
 
 * {
@@ -28,6 +30,7 @@ body {
   font-family: "Karla", sans-serif;
   width: 100%;
 }
+
 /* Styles for the preloader container */
 .preloader {
   position: fixed;
@@ -144,7 +147,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1rem;
+  padding: 1rem 1rem;
 }
 .logo {
   padding: 1rem;
@@ -181,8 +184,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   position: fixed;
   z-index: 2000;
@@ -341,10 +344,21 @@ nav {
 .main-text {
   padding: 1rem;
   height: 100%;
+  color: var(--dark-black-color);
 }
 .main-text h1 {
-  font-size: 100px;
+  font-size: 15rem;
   font-weight: bold;
+  flex-wrap: wrap;
+}
+.main-text-title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.main-text-title span {
+  font-size: 8rem;
 }
 .main-text span {
   justify-content: left;
@@ -384,7 +398,7 @@ nav {
 }
 /* ABOUT */
 .about {
-  background-color: var(--wrought-iron-color);
+  background-color: var(--dark-black-color);
   color: var(--white-dove-color);
 
   height: 100vh;
@@ -471,7 +485,7 @@ nav {
 /* SERVICES OFF */
 .services {
   height: 100%;
-  background: var(--wrought-iron-color);
+  background: var(--dark-black-color);
 }
 .services-container {
   display: grid;
@@ -531,7 +545,7 @@ nav {
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease;
-  background-color: var(--wrought-iron-color);
+  background-color: var(--dark-black-color);
 }
 .italic-text {
   font-family: "Dancing Script", cursive;
@@ -576,6 +590,8 @@ nav {
 .projects {
   height: 100%;
   padding: 2rem;
+  background: var(--dark-black-color);
+  color: var(--white-dove-color);
 }
 .projects-title {
   text-align: center;
@@ -676,13 +692,14 @@ nav {
     transform: translateX(0);
   }
 }
+
 .testimonials {
-  background-color: var(--wrought-iron-color);
+  background-color: var(--dark-black-color);
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
-.testimonials-words{
+.testimonials-words {
   color: var(--white-dove-color);
   border-bottom: 1px solid var(--white-brown-color);
   margin: 30px;
@@ -691,7 +708,7 @@ nav {
   padding: 20px 0;
   font-size: 56px;
 }
-.testimonials-header h1{
+.testimonials-header h1 {
   padding-bottom: 20px;
 }
 .testimonials-desc {
@@ -725,7 +742,7 @@ nav {
 .testimonials-obj {
   display: flex;
   padding: 0 10px 0 0;
-} 
+}
 .testimonials-obj p {
   border: 1px solid var(--kendal-charcoal-color);
   margin: 0 10px 0 0;
@@ -1078,11 +1095,11 @@ footer {
   .burger {
     right: 1.5rem;
   }
-  .testimonials-header{
+  .testimonials-header {
     font-size: 40px;
     text-align: center;
   }
-  .testimonials{
+  .testimonials {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
@@ -1206,7 +1223,7 @@ footer {
   .testimonials-desc {
     font-size: 26px;
   }
-  
+
   .testimonials {
     align-items: center;
     justify-content: center;
