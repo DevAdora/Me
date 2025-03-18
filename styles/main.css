@@ -484,92 +484,6 @@ main {
   height: 45rem;
 }
 
-/* ABOUT */
-.about {
-  background-color: var(--dark-black-color);
-  color: var(--white-dove-color);
-
-  height: 100vh;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-}
-
-.about-title {
-  padding: 1rem;
-  border-bottom: 1px solid var(--white-dove-color);
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-.about-title h1 {
-  font-size: 5rem;
-}
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-
-  justify-content: center;
-  align-items: center;
-
-  height: 100%;
-}
-.about-image {
-  object-fit: cover;
-}
-.about-image img {
-  width: 100%;
-  height: 100%;
-  border-bottom-left-radius: 45%;
-  border-bottom-right-radius: 50%;
-}
-.circle-gradient-about {
-  background-image: linear-gradient(
-    to bottom,
-    var(--kendal-charcoal-color),
-    var(--white-dove-color)
-  );
-  background-position: center;
-
-  opacity: 10%;
-  border-radius: 100%;
-
-  z-index: -1;
-
-  position: absolute;
-  background-attachment: fixed;
-  top: 0;
-}
-
-.about-circle-lg {
-  width: 16rem;
-  height: 16rem;
-}
-
-.about-circle-xl {
-  width: 16rem;
-  height: 16rem;
-  right: 10%;
-  top: 50%;
-}
-
-.about-circle-2xl {
-  width: 26rem;
-  height: 26rem;
-  left: 12.5%;
-}
-.about-text {
-  color: var(--white-dove-color);
-  padding: 1rem;
-  line-height: 1.5;
-}
-.about-text h1 {
-  font-size: 2rem;
-}
-.about-text span {
-  font-size: 1.5rem;
-}
-
 /* SERVICES OFF */
 .services {
   height: 100%;
@@ -634,6 +548,7 @@ main {
 }
 .services-number h1 {
   color: var(--white-dove-color);
+  font-size: 4rem;
 }
 .services-text {
   width: 55%;
@@ -680,6 +595,7 @@ main {
 
 .services-list ol {
   padding: 1rem;
+  margin-left: 4px;
 }
 .services-list li {
   line-height: 1.4;
@@ -743,17 +659,14 @@ main {
 .projects-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .projects-number {
   width: 45%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 .projects-number h1 {
-  text-align: center;
   width: 100%;
   font-size: 12rem;
 }
@@ -762,24 +675,27 @@ main {
 }
 .projects-img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 80vh;
+  object-fit: cover;
 }
 .projects-img img {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
+.projects-texts {
+  height: 20vh;
+}
 .projects-title-text {
-  padding: 1rem 0;
   justify-content: start;
+  padding: 1rem 0;
 }
 
 .projects-desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 .projects-title-desc {
   justify-content: start;
@@ -798,18 +714,21 @@ main {
   -o-border-radius: 30px;
 }
 
+
 /* PROJECTS GALLERY */
 .projects-gallery {
   height: 100%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  background-color: var(--dark-black-color);
 }
 .projects-gallery-title {
   text-align: center;
 }
 .projects-gallery-title h1 {
   font-size: 5rem;
+  color: var(--white-dove-color);
 }
 .projects-gallery-images {
   display: flex;
@@ -858,15 +777,66 @@ main {
   }
 }
 
+/* ABOUT */
+.about {
+  background: var(--dark-black-color);
+  height: 100%;
+  color: var(--white-dove-color);
+  height: 100vh;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image-container {
+  width: 50%;
+  height: 100%;
+}
+.about-image {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.about-image img {
+  width: 400px;
+  height: 600px;
+  object-fit: contain;
+}
+.about-text-container {
+  width: 50%;
+}
+.about-text-title {
+  padding: 2rem;
+}
+.about-text-title h1 {
+  font-size: 6rem;
+}
+.about-desc {
+  color: var(--white-dove-color);
+  padding: 2rem;
+  justify-content: end;
+  align-items: end;
+  display: flex;
+  width: 100%;
+}
+.about-desc span {
+  text-align: right;
+  font-size: 1.5rem;
+  width: 100%;
+}
+/* TESTIMONIALS */
 .testimonials {
-  background-color: var(--dark-black-color);
+  background-color: var(--white-dove-color);
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 .testimonials-words {
-  color: var(--white-dove-color);
-  border-bottom: 1px solid var(--white-brown-color);
+  color: var(--dark-black-color);
+  border-bottom: 1px solid var(--dark-black-color);
   margin: 30px;
 }
 .testimonials-header {
@@ -877,44 +847,101 @@ main {
   padding-bottom: 20px;
 }
 .testimonials-desc {
-  font-size: 30px;
-  padding-bottom: 30px;
+  color: var(--dark-black-color);
+  padding: 2rem;
+  justify-content: start;
+  align-items: start;
+  display: flex;
+  width: 100%;
+}
+.testimonials-desc span {
+  text-align: left;
+  font-size: 1.5rem;
+  width: 50%;
+}
+.testimonials-desc p {
+  padding: 0.5rem 0 0 0;
 }
 .testimonials-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   height: 100%;
 }
+.testimonials-message-container {
+  height: 100%;
+  padding: 2rem;
+}
 .testimonials-message {
-  color: var(--white-dove-color);
-  padding: 30px;
+  color: var(--dark-black-color);
   font-size: 24px;
   line-height: 1.5;
   text-align: justify;
+  height: 33.3%;
 
   overflow: hidden;
 }
+.testimonials-name-details {
+  width: 100%;
+  height: 33.3%;
+}
 .testimonials-name {
+  color: var(--dark-black-color);
   font-size: 18px;
   margin-top: 5rem;
+  text-align: right;
+  padding: 2rem 2rem 0 2rem;
 }
 .testimonials-name p {
   padding-left: 10px;
 }
 .testimonials-obj {
+  padding: 0.5rem 2rem 2rem 2rem;
   display: flex;
-  padding: 0 10px 0 0;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
 }
 .testimonials-obj p {
-  border: 1px solid var(--kendal-charcoal-color);
-  margin: 0 10px 0 0;
+  border: 1px solid var(--dark-black-color);
+  color: var(--dark-black-color);
   padding: 10px;
   border-radius: 50px;
   font-size: 14px;
 }
+
+.next-container {
+  height: 33.3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.page-counter {
+  padding: 2rem;
+  color: var(--dark-black-color);
+}
+.page-counter span {
+  font-size: 1.2rem;
+}
+.next-prev-button {
+  padding: 2rem;
+}
+.next-prev-button a {
+  background-color: var(--dark-black-color);
+  text-align: center;
+  color: var(--white-dove-color);
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
 .testimonials-img {
   height: 100%;
   justify-content: center;
@@ -926,6 +953,7 @@ main {
   width: 100%;
   height: 500px;
 }
+
 /* .projects-gallery {
   width: 120vw;;
   left: -10vw;
