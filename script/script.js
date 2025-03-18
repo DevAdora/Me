@@ -20,7 +20,6 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     var text = document.querySelector(".text");
     text.textContent = "© Portfolio by Rai";
-
   }, 1);
 
   setTimeout(function () {
@@ -31,8 +30,6 @@ window.addEventListener("load", function () {
   var content = document.querySelector(".content");
   content.style.display = "block";
 });
-
-
 
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
@@ -51,8 +48,6 @@ window.addEventListener("scroll", () => {
   )}%)`;
 });
 
-
-
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
   const windowHeight = window.innerHeight;
@@ -68,5 +63,25 @@ window.addEventListener("scroll", () => {
     0,
     200 - (scrollPosition / windowHeight) * 100
   )}%)`;
-});	
+});
+
+// Select all projects and numbers
+const projects = document.querySelectorAll(".projects-content-container");
+
+const onScroll = () => {
+  projects.forEach((project, index) => {
+    const rect = project.getBoundingClientRect();
+
+    // Check when the project is in the viewport
+    if (
+      rect.top < window.innerHeight / 2 &&
+      rect.bottom > window.innerHeight / 2
+    ) {
+      const numberElement = document.querySelector(".projects-number h1");
+      numberElement.textContent = `0${index + 1}.`;
+    }
+  });
+};
+
+window.addEventListener("scroll", onScroll);
 

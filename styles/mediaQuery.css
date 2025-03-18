@@ -1,0 +1,466 @@
+/* RESPONSIVE */
+@import url('main.css');
+
+
+@media (max-width: 1536px) {
+  .padding-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1048px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+  .padding-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .logo {
+    padding: 1rem;
+    font-size: 8px;
+    color: var(--light-dark-color);
+  }
+  .main-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main-text h1 {
+    font-size: 8rem;
+  }
+  .main-text-title span {
+    font-size: 3.5rem;
+  }
+
+  /* MAIN CONTENT */
+  .main-content-container {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  /* SERVICES */
+  .services-title h1 {
+    font-size: 5rem;
+  }
+
+  .services-quotes span {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .services-desc p {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+  .services-list li {
+    font-size: 1.2rem;
+  }
+
+  /* PROJECTS */
+  .projects-title h1 {
+    font-size: 5rem;
+  }
+  .projects-quotes span {
+    text-align: right;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .projects-img-desc {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ABOUT */
+  .about-image img {
+    width: 300px;
+    height: 500px;
+    object-fit: contain;
+  }
+  .about-text-title h1 {
+    font-size: 4.5rem;
+  }
+  .about-desc span {
+    font-size: 1.2rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials-title h1 {
+    font-size: 5rem;
+  }
+  .testimonials-desc span {
+    font-size: 1.2rem;
+  }
+  .testimonials-message p {
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  .footer-head-text a {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 940px) {
+
+  .padding-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .logo {
+    padding: 1rem;
+    font-size: 8px;
+    color: var(--light-dark-color);
+  }
+  .main-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main-text h1 {
+    font-size: 8rem;
+  }
+  .main-text-title span {
+    font-size: 3rem;
+  }
+  .left-side-text h3 {
+    font-size: 1rem;
+  }
+  .home-button {
+    padding: 0.7rem;
+  }
+  .button-container a {
+    font-size: 1.5rem;
+  }
+  /* MAIN CONTENT */
+  .main-content-container {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  /* SERVICES */
+  .services-title h1 {
+    font-size: 5rem;
+  }
+
+  .services-quotes span {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .services-desc p {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+  .services-list li {
+    font-size: 1.2rem;
+  }
+
+  /* PROJECTS */
+  .projects-title h1 {
+    font-size: 5rem;
+  }
+  .projects-quotes span {
+    text-align: right;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+  .projects-img-desc {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ABOUT */
+  .about-image img {
+    width: 300px;
+    height: 500px;
+    object-fit: contain;
+  }
+  .about-text-title h1 {
+    font-size: 4.5rem;
+  }
+  .about-desc span {
+    font-size: 1.2rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials-title h1 {
+    font-size: 5rem;
+  }
+  .testimonials-desc span {
+    font-size: 1.2rem;
+  }
+  .testimonials-message p {
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  .footer-head-text a {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-circle-2xl {
+    width: 35rem;
+    height: 35rem;
+  }
+  .about {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .about-content {
+    font-size: 16px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .about-text {
+    text-align: center;
+  }
+
+  .project-desc {
+    flex-wrap: wrap;
+    font-size: 12px;
+    display: flex;
+  }
+  .services {
+    height: 100%;
+  }
+
+  .services-content {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-head-text a {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 100px;
+  }
+  .footer-head-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .burger {
+    right: 1.5rem;
+  }
+  .testimonials-header {
+    font-size: 40px;
+    text-align: center;
+  }
+  .testimonials {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+  }
+  .testimonials-content {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+}
+@media (max-width: 680px) {
+  body {
+    width: 100vw;
+  }
+  .main-text h1 {
+    font-size: 56px;
+  }
+  .main-circle-2xl {
+    width: 25rem;
+    height: 25rem;
+  }
+  .circle-gradient-main {
+    background-position: center;
+
+    position: absolute;
+    background-attachment: fixed;
+    top: 25%;
+  }
+  .burgermenu {
+    inset: 0 0 0 0;
+  }
+  .burgermenu.active {
+    transform: translateX(0);
+  }
+  .about {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .about-content {
+    font-size: 16px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .about-text {
+    text-align: center;
+  }
+
+  .services {
+    height: 100%;
+    background: var(--wrought-iron-color);
+  }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+    padding: 2rem;
+  }
+  .services-quotes {
+    justify-content: center;
+    text-align: center;
+  }
+  .box .services-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+  }
+  .box .services-number {
+    border-right: 1px solid var(--white-dove-color);
+  }
+  .box .services-number h1 {
+    font-size: 6rem;
+  }
+  .box .services-text {
+    padding: 2rem;
+  }
+  .box .services-text span {
+    line-height: 1.1;
+    font-size: 16px;
+  }
+  .footer-head-text a {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 90px;
+  }
+  .footer-head-text {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-bottom-links {
+    flex-wrap: wrap;
+  }
+  .f-bottom-links a {
+    font-size: 16px;
+  }
+  .project-desc {
+    flex-wrap: wrap;
+    font-size: 12px;
+    display: flex;
+  }
+  .burger {
+    right: 0.5rem;
+  }
+  .burgermenu {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .testimonials-header {
+    font-size: 30px;
+  }
+  .testimonials-desc {
+    font-size: 26px;
+  }
+
+  .testimonials {
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial-content {
+    font-size: 20px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .maincontent {
+    height: 100vh;
+  }
+  .main-text {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .main-text h1 {
+    font-size: 56px;
+  }
+  .circle-gradient-main {
+    background-position: center;
+
+    position: absolute;
+    background-attachment: fixed;
+    top: 25%;
+  }
+  .circle-gradient-about {
+    background-position: center;
+
+    position: absolute;
+    background-attachment: fixed;
+    top: 25%;
+  }
+  .about-circle-2xl {
+    width: 20rem;
+    height: 20rem;
+  }
+  .about-circle-xl {
+    width: 10rem;
+    height: 10rem;
+  }
+  .about-circle-lg {
+    width: 10rem;
+    height: 10rem;
+  }
+  .burger {
+    right: 1.5rem;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .project-image {
+    object-fit: contain;
+  }
+  .project-desc {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .footer-head-text a {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 70px;
+  }
+  .footer-head-text {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-bottom-links {
+    flex-wrap: wrap;
+  }
+  .f-bottom-links a {
+    font-size: 16px;
+  }
+}

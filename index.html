@@ -6,6 +6,7 @@
     <title>Code by Ar-ar</title>
     <!-- css -->
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/mediaQuery.css" />
     <link rel="icon" href="images/logo-icon.svg" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- js -->
@@ -177,36 +178,32 @@
         </div>
       </div>
     </div>
-    <div class="projects" id="projects">
-      <div class="projects-container">
-        <div class="projects-title">
-          <h1>SELECTED WORKS</h1>
-        </div>
-        <div class="projects-quotes">
-          <p>(Projects)</p>
-          <span
-            >"I am here to help you transform your tech aspirations into a
-            remarkable reality."
-          </span>
-        </div>
+    <section class="projects">
+      <div class="projects-title">
+        <h1>SELECTED WORKS</h1>
       </div>
-      <div class="projects-content-container" id="projects-content-1">
-        <div class="projects-content">
+      <div class="projects-quotes">
+        <p>(Projects)</p>
+        <span
+          >"I am here to help you transform your tech aspirations into a
+          remarkable reality."
+        </span>
+      </div>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="projects-content-container">
           <div class="projects-number">
             <h1>01.</h1>
           </div>
           <div class="projects-img-desc">
             <div class="projects-img">
-              <img src="images/hr-image.png" />
+              <img src="images/hr-image.png" alt="Project 1" />
             </div>
             <div class="projects-texts">
-              <div class="projects-title-text">
-                <h3>Grocery & E-commerce</h3>
-              </div>
+              <h3>Grocery & E-commerce</h3>
               <div class="projects-desc">
-                <div class="projects-title-desc">
-                  <h2>Flask Python Application</h2>
-                </div>
+                <h2>Flask Python Application</h2>
                 <div class="projects-title-shenanigans">
                   <span>2025</span>
                   <span>Design</span>
@@ -216,24 +213,20 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="projects-content-container" id="projects-content-2">
-        <div class="projects-content">
+
+        <!-- Project 2 -->
+        <div class="projects-content-container">
           <div class="projects-number">
             <h1>02.</h1>
           </div>
           <div class="projects-img-desc">
             <div class="projects-img">
-              <img src="images/hr-image.png" />
+              <img src="images/hr-image.png" alt="Project 2" />
             </div>
             <div class="projects-texts">
-              <div class="projects-title-text">
-                <h3>Grocery & E-commerce</h3>
-              </div>
+              <h3>Portfolio Website</h3>
               <div class="projects-desc">
-                <div class="projects-title-desc">
-                  <h2>Flask Python Application</h2>
-                </div>
+                <h2>Next.js React Application</h2>
                 <div class="projects-title-shenanigans">
                   <span>2025</span>
                   <span>Design</span>
@@ -243,24 +236,20 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="projects-content-container" id="projects-content-3">
-        <div class="projects-content">
+
+        <!-- Project 3 -->
+        <div class="projects-content-container">
           <div class="projects-number">
             <h1>03.</h1>
           </div>
           <div class="projects-img-desc">
             <div class="projects-img">
-              <img src="images/hr-image.png" />
+              <img src="images/hr-image.png" alt="Project 3" />
             </div>
             <div class="projects-texts">
-              <div class="projects-title-text">
-                <h3>Grocery & E-commerce</h3>
-              </div>
+              <h3>Blog Application</h3>
               <div class="projects-desc">
-                <div class="projects-title-desc">
-                  <h2>Flask Python Application</h2>
-                </div>
+                <h2>Node.js & MongoDB</h2>
                 <div class="projects-title-shenanigans">
                   <span>2025</span>
                   <span>Design</span>
@@ -271,7 +260,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <div class="projects-gallery">
       <div class="projects-gallery-title">
         <h1>WORK GALLERY</h1>
@@ -329,33 +319,35 @@
       <div class="testimonials-content-container">
         <div class="testimonials-content">
           <div class="testimonials-img">
-            <img src="images/Goranow Designs.svg" />
+            <img src="images/Goranow Designs.svg" id="testimonial-img" />
           </div>
           <div class="testimonials-message-container">
             <div class="testimonials-message">
-              <p>
-                "I had the pleasure of working with Vhyron and his team, and I'm
-                thrilled with the stunning website they designed for me.
+              <p id="testimonial-text">
+                'I had the pleasure of working with Vhyron and his team, and I'm
+                thrilled with the stunning website they designed for me.'
               </p>
             </div>
             <div class="testimonials-name-details">
               <div class="testimonials-name">
-                <p>Ryan Jay Lawas</p>
+                <p id="testimonial-name">Ryan Jay Lawas</p>
               </div>
               <div class="testimonials-obj">
-                <p>WEB DEVELOPMENT</p>
-                <p>WEB DESIGN</p>
+                <p id="testimonial-role">WEB DEVELOPMENT</p>
+                <p id="testimonial-skill">WEB DESIGN</p>
               </div>
             </div>
             <div class="next-container">
               <div class="page-counter">
-                <span>01</span>
+                <span id="current-page">01</span>
                 <span>---------</span>
-                <span>02</span>
+                <span id="total-pages">02</span>
               </div>
               <div class="next-prev-button">
-                <a href="" class="next-prev-btn">Prev</a>
-                <a href="" class="next-prev-btn">Next</a>
+                <a class="next-prev-btn" onclick="changeTestimonial(-1)"
+                  >Prev</a
+                >
+                <a class="next-prev-btn" onclick="changeTestimonial(1)">Next</a>
               </div>
             </div>
           </div>
@@ -408,4 +400,62 @@
 
 <script>
   AOS.init();
+  const testimonials = [
+    {
+      img: "images/Goranow Designs.svg",
+      text: "'I had the pleasure of working with Vhyron and his team, and I'm thrilled with the stunning website they designed for me.'",
+      name: "Ryan Jay Lawas",
+      role: "WEB DEVELOPMENT",
+      skill: "WEB DESIGN",
+    },
+    {
+      img: "images/Siren.png",
+      text: "'Vhyron exceeded our expectations by delivering a sleek and modern website ahead of schedule.'",
+      name: "Jane Doe",
+      role: "FIREBASE",
+      skill: "SOFTWARE DEVELOPMENT",
+    },
+  
+  ];
+
+  let currentIndex = 0;
+
+  function changeTestimonial(direction) {
+    const content = document.querySelector(".testimonials-content");
+
+    // Trigger fade-out transition
+    content.classList.remove("active");
+
+    setTimeout(() => {
+      currentIndex += direction;
+
+      if (currentIndex < 0) {
+        currentIndex = testimonials.length - 1;
+      } else if (currentIndex >= testimonials.length) {
+        currentIndex = 0;
+      }
+
+      // Update content
+      document.getElementById("testimonial-img").src =
+        testimonials[currentIndex].img;
+      document.getElementById("testimonial-text").textContent =
+        testimonials[currentIndex].text;
+      document.getElementById("testimonial-name").textContent =
+        testimonials[currentIndex].name;
+      document.getElementById("testimonial-role").textContent =
+        testimonials[currentIndex].role;
+      document.getElementById("testimonial-skill").textContent =
+        testimonials[currentIndex].skill;
+
+      // Update page counter
+      document.getElementById("current-page").textContent = (currentIndex + 1)
+        .toString()
+        .padStart(2, "0");
+      document.getElementById("total-pages").textContent = testimonials.length
+        .toString()
+        .padStart(2, "0");
+
+      content.classList.add("active");
+    }, 400); 
+  }
 </script>
